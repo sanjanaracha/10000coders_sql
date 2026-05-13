@@ -41,7 +41,7 @@ INSERT INTO orders (customer_id, product_name, amount, order_date) VALUE
 -- 1.
 -- Get customer names and product names for all orders
 
-select name,product_name from customers c left join orders o
+select name,product_name from customers c join orders o
 on c.customer_id=o.customer_id;
 
 -- 2.
